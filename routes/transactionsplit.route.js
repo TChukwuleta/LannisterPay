@@ -7,7 +7,7 @@ const splitTransactionController = require('../controllers/transactionsplit.cont
 router.post(
     "/split-payments/compute", 
     [validate(transactionSplitPolicy.splitTransaction)],
-    transactionSplitPolicy.splitTransaction
+    splitTransactionController.splitTransaction
 )
 
 module.exports = router
