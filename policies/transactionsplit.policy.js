@@ -16,6 +16,9 @@ const splitTransaction = {
             "string.empty": "Customer's email cannot be an empty field",
             "any.required": "Customer's email is required"
         }),
+        SplitInfo: Joi.required().messages({
+            "any.required": "SplitInfo is required"
+        })
     })
 }
 
